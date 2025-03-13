@@ -20,6 +20,7 @@ class StoreProductRequest extends FormRequest
      * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
      */
     public function rules(): array
+    
     {
         return [
             'date' => 'required|date_format:Y-m-d',
